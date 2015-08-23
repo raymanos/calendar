@@ -1,0 +1,74 @@
+<xml chemp="motogp">
+	<gp>
+		<date>29.3.2015</date>
+		<name>GP Qatar Doha/Losail</name>
+	</gp>
+	<gp>
+		<date>12.4.2015</date>
+		<name>GP Americas Austin</name>
+	</gp>
+	<gp>
+		<date>19.4.2015</date>
+		<name>GP Argentina Termas del Rio Hondo</name>
+	</gp>
+	<gp>
+		<date>3.5.2015</date>
+		<name>GP Spain Jerez de la Frontera</name>
+	</gp>
+	<gp>
+		<date>17.5.2015</date>
+		<name>GP France Le Mans</name>
+	</gp>
+	<gp>
+		<date>31.5.2015</date>
+		<name>GP Italy Mugello</name>
+	</gp>
+	<gp>
+		<date>14.6.2015</date>
+		<name>GP Catalunya Catalunya-Barcelona</name>
+	</gp>
+	<gp>
+		<date>27.6.2015</date>
+		<name>GP Netherlands Assen</name>
+	</gp>
+	<gp>
+		<date>12.7.2015</date>
+		<name>GP Germany Sachsenring</name>
+	</gp>
+	<gp>
+		<date>9.8.2015</date>
+		<name>GP Indianapolis Indianapolis</name>
+	</gp>
+	<gp>
+		<date>16.8.2015</date>
+		<name>GP Czech Republic Brno</name>
+	</gp>
+	<gp>
+		<date>30.8.2015</date>
+		<name>GP Great Britain Donington</name>
+	</gp>
+	<gp>
+		<date>13.9.2015</date>
+		<name>GP San Marino Riviera di Rimini Misano</name>
+	</gp>
+	<gp>
+		<date>27.9.2015</date>
+		<name>GP Aragon MotorLand Aragon</name>
+	</gp>
+	<gp>
+		<date>11.10.2015</date>
+		<name>GP Japan Motegi</name>
+	</gp>
+	<gp>
+		<date>18.10.2015</date>
+		<name>GP Australia Philip Island</name>
+	</gp>
+	<gp>
+		<date>25.10.2015</date>
+		<name>GP Malaysia Sepang</name>
+	</gp>
+	<gp>
+		<date>8.11.2015</date>
+		<name>GP Valencia Ricardo Torma-Valencia</name>
+	</gp>
+</xml>

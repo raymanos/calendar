@@ -1,0 +1,158 @@
+/*Large monitors*/
+@media (min-width: 1401px) and (max-width: 1800px){
+	body{
+		background-image: url(../img/1600.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: gray;
+	}
+	table{
+		width: 700px;
+	}
+	#wrapper{
+		width: 800px;
+	}
+	.title{
+		font-size: 50px;
+		margin: 15px;
+		margin-left: 50px;
+	}
+ }
+/*NOTEBOOK*/
+@media (min-width: 1101px) and (max-width: 1400px){
+	body{
+		background-image: url(../img/1400.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: gray;
+	}
+	table{
+		width: 600px;
+	}
+	#wrapper{
+		width: 800px;
+	}
+	.title{
+		font-size: 40px;
+		margin: 15px;
+		margin-left: 50px;
+	}
+ }
+@media (min-width: 769px) and (max-width: 1100px){
+	body{
+		background-image: url(../img/1100.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: gray;
+	}
+	table{
+		width: 600px;
+	}
+	#wrapper{
+		width: 800px;
+	}
+	.title{
+		font-size: 40px;
+		margin: 15px;
+		margin-left: 50px;
+	}
+ }
+@media (max-width: 768px){
+	body{
+		background-image: url(../img/768.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: gray;
+	}
+	table{
+		width: 400px;
+	}
+	#wrapper{
+		width: 800px;
+	}
+	.title{
+		margin: 15px;
+		margin-left: 50px;
+	}
+ }
+@media (max-width: 320px){
+	body{
+		background-image: url(../img/320.png);
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-color: gray;
+	}
+	table{
+		width: 250px;
+	}
+	#wrapper{
+		width: 300px;
+	}
+	.title{
+		margin: 15px;
+		margin-left: 500px;
+	}
+ }
+body{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	color: white;
+}
+th{
+	background-color: #511A5B;
+	padding: 3px;
+}
+/*Для начала ставим ВЕЗДЕ граница*/
+td{
+	padding: 5px;
+	border: 1px solid #511A5B;
+}
+/*Теперь методично убираем*/
+td:last-child{
+	border-right: none;
+}
+td:first-child{
+	border-left: none;
+}
+tr:last-child td{
+	border-bottom: none;
+}
+tr:nth-child(2){
+	background-color: #752583;
+}
+/*--------------------------*/
+/*Колонка ВС фиксированной дины у всех таблиц*/
+td:nth-child(7){
+	width: 50%;
+}
+/*-------------------------*/
+
+img{
+	height: 30px;
+	width: 50px;
+}
+table{
+	background-color: #852B99;
+	margin-bottom: 20px;
+	border-radius: 12px;
+	border-collapse: collapse;
+	box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+.title{
+	font-family: 'Orbitron', sans-serif;
+}
+#wrapper{
+	margin: 0 auto;
+}
+.nowday{
+	font-weight: bolder;
+	font-size: 19;
+	color: #FF6666;
+}
+.day{
+	font-weight: bold;
+	text-align: center;
+}
+.td-color{
+	background-color: #FF6666;
+}

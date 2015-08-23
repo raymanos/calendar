@@ -1,0 +1,58 @@
+<xml chemp="wsbk">
+	<gp>
+		<date>22.2.2015</date>
+		<name>Phillip Island</name>
+	</gp>
+	<gp>
+		<date>22.3.2015</date>
+		<name>Buriram</name>
+	</gp>
+	<gp>
+		<date>12.4.2015</date>
+		<name>Aragon</name>
+	</gp>
+	<gp>
+		<date>19.4.2015</date>
+		<name>Assen</name>
+	</gp>
+	<gp>
+		<date>10.5.2015</date>
+		<name>Imola</name>
+	</gp>
+	<gp>
+		<date>24.5.2015</date>
+		<name>Donington</name>
+	</gp>
+	<gp>
+		<date>7.6.2015</date>
+		<name>Portimao STC</name>
+	</gp>
+	<gp>
+		<date>21.6.2015</date>
+		<name>Misano</name>
+	</gp>
+	<gp>
+		<date>5.7.2015</date>
+		<name>Moscow STC</name>
+	</gp>
+	<gp>
+		<date>19.7.2015</date>
+		<name>Laguna Seca</name>
+	</gp>
+	<gp>
+		<date>2.8.2015</date>
+		<name>Sepang</name>
+	</gp>
+	<gp>
+		<date>20.9.2015</date>
+		<name>Jerez</name>
+	</gp>
+	<gp>
+		<date>4.10.2015</date>
+		<name>Magny-Cours</name>
+	</gp>
+	<gp>
+		<date>18.10.2015</date>
+		<name>Losail STC</name>
+	</gp>
+</xml>

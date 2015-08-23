@@ -1,0 +1,39 @@
+<xml chemp="dtm">
+	<gp>
+		<date>3.5.2015</date>
+		<name>Hockenheimring Baden-Württemberg</name>
+	</gp>
+	<gp>
+		<date>31.5.2015</date>
+		<name>Lausitzring</name>
+	</gp>
+	<gp>
+		<date>28.6.2015</date>
+		<name>Norisring</name>
+	</gp>
+	<gp>
+		<date>12.7.2015</date>
+		<name>Circuit Park Zandvoort (NED)</name>
+	</gp>
+	<gp>
+		<date>2.8.2015</date>
+		<name>Red-Bull-Ring (AUT)</name>
+	</gp>
+	<gp>
+		<date>30.8.2015</date>
+		<name>Moscow Raceway (RUS)</name>
+	</gp>
+	<gp>
+		<date>13.9.2015</date>
+		<name>etropolis Motorsport Arena Oschersleben</name>
+	</gp>
+	<gp>
+		<date>27.9.2015</date>
+		<name>Nürburgring</name>
+	</gp>
+	<gp>
+		<date>18.19.2015</date>
+		<name>Hockenheimring Baden-Württemberg</name>
+	</gp>
+
+</xml>

@@ -1,0 +1,15 @@
+User-agent: Yandex
+Disallow: /css
+Disallow: /img
+Host: calendar.zz.vc
+
+User-agent: Googlebot
+Disallow: /css
+Disallow: /img
+Host: calendar.zz.vc
+
+User-agent: *
+Crawl-delay: 30
+Disallow: /css
+Disallow: /img
+Host: calendar.zz.vc

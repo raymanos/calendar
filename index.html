@@ -1,0 +1,195 @@
+<html>
+<head>
+  <title>Гоночный календарь сезона 2015</title>
+  <meta charset="utf-8">
+  <meta name="description" content="календрь сезон 2015 calendar formula1 formula 1 f1 2015 wtcc dtm world sbk superbike motogp moto gp season 2015 календрь"> 
+  <meta name="robots" content="index,follow">
+  <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script language="JavaScript">
+function l(text){
+  console.log(text);
+ }
+//Функция проверки на високосный год
+function isLeapYear(year){
+ if (year % 4 == 0) return true // Является високосным годом
+ return false // Не является високосным годом
+ }
+//Функция возвращает колличество дней в месяце взависимости от года
+function getDays(month, year){
+ // Создаем массив, для хранения числа дней в каждом месяце
+ var ar = new Array(12)
+ ar[0] = 31 // Январь
+ ar[1] = (isLeapYear(year)) ? 29 : 28 // Февраль
+ ar[2] = 31 // Март
+ ar[3] = 30 // Апрель
+ ar[4] = 31 // Май
+ ar[5] = 30 // Июнь
+ ar[6] = 31 // Июль
+ ar[7] = 31 // Август
+ ar[8] = 30 // Сентябрь
+ ar[9] = 31 // Остябрь
+ ar[10] = 30 // Ноябрь
+ ar[11] = 31 // Декабрь
+ return ar[month]
+ }
+//Функция возвращает название месяца
+function getMonthName(month){
+ var ar = new Array(12)
+ ar[0] = "Январь"
+ ar[1] = "Февраль"
+ ar[2] = "Март"
+ ar[3] = "Апрель"
+ ar[4] = "Май"
+ ar[5] = "Июнь"
+ ar[6] = "Июль"
+ ar[7] = "Август"
+ ar[8] = "Сентабрь"
+ ar[9] = "Октябрь"
+ ar[10] = "Ноябрь"
+ ar[11] = "Декабрь"
+ return ar[month];
+ }
+function getengmonthName(month){
+ var ar = new Array(12)
+ ar[0] = "January";
+ ar[1] = "February";
+ ar[2] = "March";
+ ar[3] = "April";
+ ar[4] = "May";
+ ar[5] = "June";
+ ar[6] = "July";
+ ar[7] = "August";
+ ar[8] = "September";
+ ar[9] = "October";
+ ar[10] = "November";
+ ar[11] = "December";
+ return ar[month];
+ }
+// Функция рисования календаря
+function drawCalendar(month){
+ // Переменные 
+ var now = new Date()
+ var year = now.getYear()
+ var monthName = getMonthName(month)
+ var currentMonthName = getMonthName(now.getMonth());
+ var date = now.getDate()
+ console.log(date);
+ now = null
+ var firstDayInstance = new Date(year, month, 1);
+ var firstDay = firstDayInstance.getDay()+3//+1
+ firstDayInstance = null
+ // Число дней в текущем месяце
+ var lastDate= getDays(month, year)
+ // Создаем основную структуру таблицы
+ var text = ""
+ text += '<table id="'+getengmonthName(month)+'">';
+ text += '<th colspan=7>';
+ text += monthName;
+ text += '</th>'
+ var openCol = '<td>';
+ var closeCol = '</td>'
+ // Создаем массив сокращенных названий дней недели
+ var weekDay = new Array(7)
+ weekDay[0] = "Пн"
+ weekDay[1] = "Вт"
+ weekDay[2] = "Ср"
+ weekDay[3] = "Чт"
+ weekDay[4] = "Пт"
+ weekDay[5] = "Сб"
+ weekDay[6] = "Вс"
+
+ text += '<tr>'
+ for (var dayNum = 0; dayNum < 7; ++dayNum){
+  text += openCol + weekDay[dayNum] + closeCol
+ }
+ text += '</tr>'
+ var digit = 1
+ var curCell = 2
+ for (var row = 1; row <= Math.ceil((lastDate+firstDay-1)/7); ++row)
+ {
+  text += '<tr>'
+  for (var col = 1; col <= 7; ++col)
+  {
+   if (digit > lastDate) break
+   if (curCell < firstDay)
+   {
+    text += '<td></td>'
+    curCell++
+   }
+   else
+   {
+    if (digit == date)
+    { // Текущая ячейка представляет сегодняшнюю дату
+      if(currentMonthName == monthName)
+        text += '<td class="td-color">Сегодня:<span class="day nowday">';
+      else
+        text += "<td><span>";
+     text += digit
+     // text += "Сегодня:";
+     text += '</span></td>'
+    }
+    else
+    {
+     text += '<td><span class="day">';
+     text +=digit
+     text +='</span></td>'
+    }
+    digit++
+   }
+  }
+  text += '</tr>'
+ }
+ text += '</table>'
+ // Выводим полученную строку
+ document.write(text)
+ }
+</script>
+</head>
+<body>
+<div id="wrapper">
+  <div class="title">Racing Calendar 2015</div>
+<script>
+for(var i = 1; i < 11; i++){
+ drawCalendar(i);
+}
+  $(document).ready(function(){
+    // var div = "<br><div class='f1'><img src='img/f1.png'>";
+    function parseGP(xml){
+      var chemp = $(xml).find("xml").attr("chemp");
+      // l("CHEMP: "+chemp);
+      $(xml).find("gp").each(function(index){
+        var date = $(this).find("date").text().split('.');
+        var name = $(this).find("name").text();
+        var day = date[0];
+        var month = date[1];
+        var year = date[2];
+        //ищем подходящий викенд
+        var month_eng = getengmonthName(month-1);
+        $("#"+month_eng).find("td").each(function(index){
+          // l($(this).find(".day").text());
+          if ( $(this).find(".day").text() == day ){
+            $(this).append("<div class='"+chemp+"'><img src='img/"+chemp+".png'/>"+name+"</div>"); 
+          }
+        });
+      })
+    }
+    $.ajax({type:"GET",url:"xml/f1.xml",dataType:"xml",success:parseGP});
+    $.ajax({type:"GET",url:"xml/dtm.xml",dataType:"xml",success: parseGP});
+    $.ajax({type:"GET",url:"xml/wtcc.xml",dataType:"xml",success: parseGP});
+    $.ajax({type:"GET",url:"xml/motogp.xml",dataType:"xml",success: parseGP});
+    $.ajax({type:"GET",url:"xml/wsbk.xml",dataType:"xml",success: parseGP});
+    $.ajax({type:"GET",url:"xml/indycar.xml",dataType:"xml",success: parseGP});
+    });
+
+    // });
+
+
+</script>
+</div>
+<div id="info">Макс Курков<br>vk.com/raymanos<br>raymanos00@gmail.com</div>
+</body>
+</html>

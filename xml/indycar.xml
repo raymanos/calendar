@@ -1,0 +1,74 @@
+<xml chemp="indycar">
+	<gp>
+		<date>29.3.2015</date>
+		<name>Streets of St. Peterburg</name>
+	</gp>
+	<gp>
+		<date>12.4.2015</date>
+		<name>NOLA Motorsports Park (New Orleans)</name>
+	</gp>
+	<gp>
+		<date>19.4.2015</date>
+		<name>Streets of Long Beach</name>
+	</gp>
+	<gp>
+		<date>26.4.2015</date>
+		<name>Barber Motorsports Park</name>
+	</gp>
+	<gp>
+		<date>9.5.2015</date>
+		<name>Garnd Prix of Indianapolis</name>
+	</gp>
+	<gp>
+		<date>16.5.2015</date>
+		<name>Indianapolis 500 Qualifying Day 1</name>
+	</gp>
+	<gp>
+		<date>17.5.2015</date>
+		<name>Indianapolis 500 Qualifying Day 2</name>
+	</gp>
+	<gp>
+		<date>24.5.2015</date>
+		<name>Indianapolis 500 Mile Race</name>
+	</gp>
+	<gp>
+		<date>30.5.2015</date>
+		<name>The Raceway at Belle Isle Park</name>
+	</gp>
+	<gp>
+		<date>31.5.2015</date>
+		<name>The Raceway at Belle Isle Park</name>
+	</gp>
+	<gp>
+		<date>6.6.2015</date>
+		<name>Texas Motor Speedway</name>
+	</gp>
+	<gp>
+		<date>14.6.2015</date>
+		<name>Streets of Toronto</name>
+	</gp>
+	<gp>
+		<date>27.6.2015</date>
+		<name>Auto Club Speedway</name>
+	</gp>
+	<gp>
+		<date>12.7.2015</date>
+		<name>The Milwauee Mile</name>
+	</gp>
+	<gp>
+		<date>18.7.2015</date>
+		<name>Iowa Speedway</name>
+	</gp>
+	<gp>
+		<date>2.8.2015</date>
+		<name>Mid-Ohio Sports Car Course</name>
+	</gp>
+	<gp>
+		<date>23.8.2015</date>
+		<name>Pocono Raceway</name>
+	</gp>
+	<gp>
+		<date>30.8.2015</date>
+		<name>Sonoma Raceway</name>
+	</gp>
+</xml>
